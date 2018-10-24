@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class PostTableViewCell: UITableViewCell {
     
@@ -15,6 +16,8 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var likeLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var captionLabel: UILabel!
+    @IBOutlet weak var commentButton: UIButton!
+    @IBOutlet weak var commentLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,6 +34,7 @@ class PostTableViewCell: UITableViewCell {
         self.postImageView.image = postData.image
         
         self.captionLabel.text = "\(postData.name!) : \(postData.caption!)"
+        self.captionLabel.sizeToFit()
         let likeNumber = postData.likes.count
         likeLabel.text = "\(likeNumber)"
         
@@ -45,6 +49,14 @@ class PostTableViewCell: UITableViewCell {
         } else {
             let buttonImage = UIImage(named: "like_none")
             self.likeButton.setImage(buttonImage, for: .normal)
+        }
+        
+        if postData.comments != [] {
+            let displaycomment:String = postData.comments.joined(separator: "\n")
+            self.commentLabel.text = "\(displaycomment)"
+            print("DEBUG_PRINT: \(displaycomment)")
+        } else {
+            self.commentLabel.text = ""
         }
     }
 }

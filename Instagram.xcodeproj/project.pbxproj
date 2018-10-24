@@ -22,6 +22,7 @@
 		929A52F821787FBD00D3F676 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929A52F721787FBD00D3F676 /* PostData.swift */; };
 		929A52FB2178891C00D3F676 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929A52F92178891C00D3F676 /* PostTableViewCell.swift */; };
 		929A52FC2178891C00D3F676 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 929A52FA2178891C00D3F676 /* PostTableViewCell.xib */; };
+		929A52FE217AF95C00D3F676 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929A52FD217AF95C00D3F676 /* CommentViewController.swift */; };
 		92EBF0C22173397E005B84BF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92EBF0C12173397E005B84BF /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		929A52F721787FBD00D3F676 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 		929A52F92178891C00D3F676 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		929A52FA2178891C00D3F676 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		929A52FD217AF95C00D3F676 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		92EBF0C12173397E005B84BF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FD041656983A5A19DD639FF8 /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +108,7 @@
 				9291B7F4216DFD0C009B1054 /* SettingViewController.swift */,
 				9291B7F2216DFCEE009B1054 /* PostViewController.swift */,
 				9291B7F0216DFCD4009B1054 /* ImageSelectViewController.swift */,
+				929A52FD217AF95C00D3F676 /* CommentViewController.swift */,
 				9291B7E1216DE51B009B1054 /* Assets.xcassets */,
 				9291B7E3216DE51B009B1054 /* LaunchScreen.storyboard */,
 				9291B7E6216DE51B009B1054 /* Info.plist */,
@@ -254,6 +257,7 @@
 				929A52FB2178891C00D3F676 /* PostTableViewCell.swift in Sources */,
 				9291B7F5216DFD0C009B1054 /* SettingViewController.swift in Sources */,
 				9291B7ED216DFC6C009B1054 /* HomeViewController.swift in Sources */,
+				929A52FE217AF95C00D3F676 /* CommentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
